@@ -33,7 +33,7 @@ class ConversorDecimal
             if ($i > 0 && ($this->osRomanos[$atual] < $this->osRomanos[$anterior])) {
                 $resultado += $this->osRomanos[$atual];
             } elseif ($i > 0 && $this->osRomanos[$atual] > $this->osRomanos[$anterior]) {
-                $resultado += ($this->osRomanos[$atual] * -1);
+                $resultado += ($this->osRomanos[$atual] - $this->osRomanos[$anterior] - 1);
             } else {
                 $resultado += $this->osRomanos[$atual];
             }

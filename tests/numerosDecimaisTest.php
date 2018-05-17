@@ -39,8 +39,56 @@ class numerosDecimaisTest extends TestCase
 
     public function testPossoConverterV()
     {
-        $resultado = $this->conversor->converter('V');
-        $this->assertEquals(5, $resultado);
+      $resultado = $this->conversor->converter('V');
+      $this->assertEquals(5, $resultado);
+    }
+
+    public function testPossoConverterVI()
+    {
+      $resultado = $this->conversor->converter('VI');
+      $this->assertEquals(6, $resultado);
+    }
+
+    public function testPossoConverterVII()
+    {
+      $resultado = $this->conversor->converter('VII');
+      $this->assertEquals(7, $resultado);
+    }
+
+    public function testPossoConverterVIII()
+    {
+      $resultado = $this->conversor->converter('VIII');
+      $this->assertEquals(8, $resultado);
+    }
+
+    public function testPossoConverterIX()
+    {
+      $resultado = $this->conversor->converter('IX');
+      $this->assertEquals(9, $resultado);
+    }
+
+    public function testPossoConverterX()
+    {
+      $resultado = $this->conversor->converter('X');
+      $this->assertEquals(10, $resultado);
+    }
+
+    public function testPossoConverterXIV()
+    {
+      $resultado = $this->conversor->converter('XIV');
+      $this->assertEquals(14, $resultado);
+    }
+
+    public function testPossoConverterXXVIII()
+    {
+      $resultado = $this->conversor->converter('XXVIII');
+      $this->assertEquals(28, $resultado);
+    }
+
+    public function testPossoConverterMDLIV()
+    {
+      $resultado = $this->conversor->converter('MDLIV');
+      $this->assertEquals(1554, $resultado);
     }
 
 }
