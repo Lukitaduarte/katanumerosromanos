@@ -1,0 +1,17 @@
+{
+    "name": "bruno/kata",
+    "require": {
+        "phpunit/phpunit": "6.5"
+    },
+    "authors": [
+        {
+            "name": "Bruno Monteiro",
+            "email": "bruno.monteiro@justdigital.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NumerosRomanos\\": "src/"
+        }
+    }
+}
